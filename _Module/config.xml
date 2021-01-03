@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EconomyTweak_h_Configuration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EconomyTweak_h_OptimalStockPeriodPrice>30</EconomyTweak_h_OptimalStockPeriodPrice>
+  <EconomyTweak_h_LongtermPriceMultiplierExpValue>0.1</EconomyTweak_h_LongtermPriceMultiplierExpValue>
+  <EconomyTweak_h_ShorttermPriceMultiplierExpValue>0.5</EconomyTweak_h_ShorttermPriceMultiplierExpValue>
+  <EconomyTweak_h_ProsperityPriceFactorExpValue>0.2</EconomyTweak_h_ProsperityPriceFactorExpValue>
+  <EconomyTweak_h_OptimalStockPeriodOverconsumption>15</EconomyTweak_h_OptimalStockPeriodOverconsumption>
+  <EconomyTweak_h_DemandMultiplier>0.5</EconomyTweak_h_DemandMultiplier>
+  <EconomyTweak_h_EquipmentDemandMultiplier>4</EconomyTweak_h_EquipmentDemandMultiplier>
+  <EconomyTweak_h_ProductionMultiplier>1.5</EconomyTweak_h_ProductionMultiplier>
+  <EconomyTweak_h_OptimalStockPeriodFood>15</EconomyTweak_h_OptimalStockPeriodFood>
+  <EconomyTweak_h_FoodShortageProsperityExpValue>0.5</EconomyTweak_h_FoodShortageProsperityExpValue>
+  <EconomyTweak_h_TownDemandFulfilledProsperityExpValue>0.5</EconomyTweak_h_TownDemandFulfilledProsperityExpValue>
+  <EconomyTweak_h_ValueOfProsperity>100</EconomyTweak_h_ValueOfProsperity>
+  <EconomyTweak_h_MarketGoldProsperityRatio>0.1</EconomyTweak_h_MarketGoldProsperityRatio>
+  <EconomyTweak_h_AdditionalCaravansPerHero>1</EconomyTweak_h_AdditionalCaravansPerHero>
+  <EconomyTweak_h_DebugLevel>0</EconomyTweak_h_DebugLevel>
+  <EconomyTweak_h_DebugDisplay>true</EconomyTweak_h_DebugDisplay>
+</EconomyTweak_h_Configuration>
+<!-- Description of constants:
+EconomyTweak_h_OptimalStockPeriodPrice - Period in days used to calculate prices: towns will have prices below item value if the current stock is more than enough to fulfill demands for that period, above item value if not enough;
+EconomyTweak_h_LongtermPriceMultiplierExpValue - Long-term price multiplier will be exponentiated by MathF.Pow with that value;
+EconomyTweak_h_ShorttermPriceMultiplierExpValue - Short-term price multiplier will be exponentiated by MathF.Pow with that value;
+EconomyTweak_h_ProsperityPriceFactorExpValue - Prices in towns with < 3000 prosperity are slightly increased, with > 3000 prosperity slightly decreased, multiplier will be exponentiated by MathF.Pow with that value;
+EconomyTweak_h_OptimalStockPeriodOverconsumption - Period in days used to calculate overconsumption: towns will faster consume stocks above amount needed for that period;
+EconomyTweak_h_DemandMultiplier - Demand is multiplied by this value;
+EconomyTweak_h_EquipmentDemandMultiplier - Equipment demand is additionally multiplied by this value;
+EconomyTweak_h_ProductionMultiplier - Production is multiplied by that value;
+EconomyTweak_h_OptimalStockPeriodFood - Towns will be more wary of food shortages when they have not enough food for that period;
+EconomyTweak_h_FoodShortageProsperityExpValue - Prosperity change due to food shortage will be exponentiated by MathF.Pow with that value;
+EconomyTweak_h_TownDemandFulfilledProsperityExpValue - Prosperity change due to demands fulfilled will be exponentiated by MathF.Pow with that value;
+EconomyTweak_h_ValueOfProsperity - 1 prosperity = 1 gold * EconomyTweak_h_ValueOfProsperity;
+EconomyTweak_h_MarketGoldProsperityRatio - Towns aspire to have Prospetity / ValueOfProsperity * MarketGoldProsperityRatio gold at market;
+EconomyTweak_h_AdditionalCaravansPerHero - Defines a number of additional NPC caravans per NPC hero;
+EconomyTweak_h_DebugLevel - Defines debug level: how much will be written to 'EconomyTweak_h_log.txt';
+EconomyTweak_h_DebugDisplay - Defines debug level: when true, info about methods to run will be displayed in game.
+Default values in 'config_default.xml' file. -->

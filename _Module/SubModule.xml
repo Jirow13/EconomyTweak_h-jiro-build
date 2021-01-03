@@ -1,0 +1,25 @@
+﻿<Module>
+  <Name value="Economy Tweak - Jiro's Build"/>
+  <Id value="EconomyTweak_h"/>
+  <Version value="v0.152.1"/>
+  <SingleplayerModule value="true"/>
+  <MultiplayerModule value="false"/>
+  <DependedModules>
+    <DependedModule Id="Native"/>
+    <DependedModule Id="SandBoxCore"/>
+    <DependedModule Id="Sandbox"/>
+    <DependedModule Id="StoryMode" />
+  </DependedModules>
+  <SubModules>
+    <SubModule>
+      <Name value="EconomyTweak_h"/>
+      <DLLName value="EconomyTweak_h.dll"/>
+      <SubModuleClassType value="EconomyTweak_h.SubModule"/>
+      <Tags>
+        <Tag key="DedicatedServerType" value="none" />
+        <Tag key="IsNoRenderModeElement" value="false" />
+      </Tags>
+    </SubModule>
+  </SubModules>
+  <Xmls/>
+</Module>
